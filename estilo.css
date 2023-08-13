@@ -19,39 +19,12 @@
     color:red !important; 
     
 }
-.head nav {
-    width:100%;
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    grid-template-rows: center;
-    align-items: start;
-    background-color: rgb(51, 50, 50);
-    height: 90px;
+.imagen {
+    width: 300px;
+    height: 400px;
 }
-
-.head nav img {
-    width: 90px;
-    height: 80px;
-}
-
-.head nav ul {
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 30px;
-    
-}
-
-.head nav ul li a {
-    font-size: 20px;
-    color: white;
-    font-family: "Russo One", sans-serif;
-
-}
-
-.head nav ul li a:hover {
-    color:rgb(243, 63, 63);
+.padding {
+    padding-top: 10px;
 }
 
 .bienvenida {

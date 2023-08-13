@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tienda</title>
+    <link rel="shorcut icon" href="imagenes/descarga.png" />
     <link rel="stylesheet" href="estilo.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
 </head>
@@ -75,35 +76,56 @@
       <span class="visually-hidden">Siguiente</span>Siguiente
     </button>
   </div>
-  <div class="border border-dark">
-  <h1 class="text-center">REMERAS</h1>
-  <div class="container">
-    <div class="row gap-3">
-      <div class="col">
-        <img class="tam-img border border-dark" src="imagenes/tienda/9111-0.jpg">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light pt-5">
+    <div class="container-fluid bg-dark" style="border:5px solid rgb(250, 157, 35)">
+      <a class="navbar-brand" href="#">Productos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Elige una Opción
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="tienda2.html">Remeras</a></li>
+              <li><a class="dropdown-item" href="tienda3.html">Gorras</a></li>
+              <li><a class="dropdown-item" href="tienda4-html">Libros</a></li>
+              <li><a class="dropdown-item" href="tienda1.html">Todos</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-      <div class="col">
-        <img class="tam-img border border-dark" src="imagenes/tienda/gualecguaychu-frente1.jpg">
-      </div>
-      <div class="col">
-        <img class="tam-img border border-dark" src="imagenes/tienda/indio-cantando-jpg1.jpg">
-      </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-info" type="submit">Buscar</button>
+      </form>
     </div>
-  </div>
-    <div class="container">
-      <div class="row gap-3">
-        <div class="col">
-          <img class="tam-img border border-dark" src="imagenes/tienda/modelo-08-adelante1.png">
-        </div>
-        <div class="col">
-          <img class="tam-img border border-dark" src="imagenes/tienda/Sin título.jpg">
-        </div>
-        <div class="col">
-          <img class="tam-img border border-dark" src="imagenes/tienda/sobrio-frente1.jpg">
-        </div>
-      </div>
+  </nav>
+  
+  <h1 class="text-center">LIBROS</h1>
+  <div class="row">
+    <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center text-center" style="border: 2px solid black;">
+      <img class="imagen" src="imagenes/tienda/LIBRO.jpg">La Vida Es Una Misión Secreta
+      <button type="button" class="btn btn-success">Comprar</button>
     </div>
+    <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center text-center" style="border: 2px solid black;">
+      <img class="imagen" src="imagenes/tienda/libro1.png">Recuerdos Que Mienten Un Poco
+      <button type="button" class="btn btn-success">Comprar</button>
+    </div>
+    <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center text-center" style="border: 2px solid black;">
+      <img class="imagen" src="imagenes/tienda/libro2.jpg">Indio Solari
+      <button type="button" class="btn btn-success">Comprar</button>
+    </div>
+</div>
+<div class="row pt-3 pb-3">
+  <div class="col-md-4 col-sm-12 d-flex flex-column align-items-center text-center" style="border: 2px solid black;">
+    <img class="imagen" src="imagenes/tienda/libro3.jpg">Delito Americano
+    <button type="button" class="btn btn-success">Comprar</button>
   </div>
+</div>
+</main>
   <footer class="footer">
     <a>
     <h3>Mapa del sitio</h3></a>
@@ -124,6 +146,6 @@
   </ul>
 </div>
 </footer>
-<script src="js/bootstrap.js"></script>
-</main>
+<script src="js/bootstrap.bundle.js"></script>
+</body>
 </html>
