@@ -5,19 +5,16 @@
     padding: 0;
     list-style: none;
 }
-
 @font-face {
     font-family: "Roboto Condensed";
     src: url("./fuente/Roboto_Condensed/RobotoCondensed-Light.ttf")
 }
-
 @font-face {
     font-family: "russo one";
     src: url("./fuente/Russo_One/RussoOne-Regular.ttf");
 }
 .nav-link:hover {
-    color:red !important; 
-    
+    color:red !important;   
 }
 .imagen {
     width: 300px;
@@ -26,8 +23,7 @@
 .padding {
     padding-top: 10px;
 }
-
-.bienvenida {
+.inicio {
     display:relative;
     background-image: url("imagenes/Sin-nombre.jpg");
     margin-top:10px;
@@ -36,34 +32,24 @@
     background-size: cover;
     background-position: center;
 }
-
-.box {
-    display:block;
-    width:75px;
-    height:75px;
-    margin:5px;
-}
-
-.box.sticky img {
+.inicio__h1 {
+    text-align:center;
+    color:white;
+    font-size:140px;
+    padding-top:150px
+    }
+    .inicio__box {
+        position: absolute;
+        top: 0px;
+        margin-left: 1600px;
+        margin-top:700px;
+    }
+.inicio__img {
     border: 5px solid red;
     border-radius:50%;
     width:110px;
     height:105px;
 }
-.box.sticky {
-    position: absolute;
-    top: 0px;
-    margin-left: 1600px;
-    margin-top:700px;
-}
-
-.bienvenida h1 {
-text-align:center;
-color:white;
-font-size:140px;
-padding-top:150px
-}
-
 .titulo {
     background-image: url('imagenes/20765.jpg');
     height: 1050px;
@@ -71,8 +57,7 @@ padding-top:150px
     background-size: cover;
     background-position: center;
 }
-
-.titulo h1 {
+.titulo__h1 {
     padding-top: 10px;
     margin-top: 10px;
     color: white;
@@ -80,82 +65,67 @@ padding-top:150px
     font-size: 70px;
     font-family: "roboto condensed", sans-serif;
 }
-
-.titulo p {
+.titulo__p {
     color: white;
     font-size: 25px;
     text-align: justify;
     margin: 70px 70px;  
 }
-
-.discos h2 {
-font-family: "roboto condensed", sans-serif;
-font-size: 40px;
-}
-
-.discos {
+.titulo__discos {
+    font-family: "roboto condensed", sans-serif;
     color: white;
     text-align: center;
     margin-top: 100px;
 }
-
-.discos table {
-    font-size: 20px;
+.titulo__h2 {
+font-size: 50px;
+}
+.tabla {
+    font-size: 25px;
     margin: 0 auto;
     border-collapse: collapse;
 }
- 
-.discos table tr td {
+.tabla__columna {
     border: 1px solid white;
     padding: 5px;
 }
- 
 .multimedia {
-    color: white;
-    font-size: 25px;
     margin-top: 10px;
     padding: 50px;
-    text-align: center;
     background-image: url('imagenes/audience-band-concert-crowd-wallpaper-preview.jpg');
     height: 1200px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-
-.multimedia .fotos h2 {
+.multimedia__h2 {
     font-family: "roboto condensed", sans-serif;
     font-size: 40px;
+    color: white;
+    text-align: center;
     background-color: brown;
     width: 100%;
     height: 60px;
     padding-top: 10px;
 }
-
-.fotos img {
+.multimedia__img {
     border-style: solid;
+    color: white;
     border-radius: 10%;
     width: 400px;
     height: 300px;
     padding: 2px;
     margin: 10px;
 }
-
-.fotos img:hover {
+.multimedia__img:hover {
     color:rgb(243, 63, 63);
 }
-.videos h2 {
-font-family: "roboto condensed", sans-serif;
-    font-size: 40px;
-    background-color: brown;
-    width: 100%;
-    height: 60px;
-    padding-top: 10px;
+.multimedia__videos {
+    text-align: center;
 }
-.videos iframe {
+.multimedia__link {
     margin-top: 20px;
     padding: 0px 70px 0px 70px;
-    border-radius: 13%;
 }
 .formulario {
     display: flex;
@@ -163,32 +133,32 @@ font-family: "roboto condensed", sans-serif;
     margin-top: 10px;
     background-image: url("imagenes/contact.jpg");
     background-size: cover;
-    padding-top: 5px;
-    padding-bottom: 5px;
     height: 450px;
     align-items: center;
 }
 
-.formulario h2 {
+.formulario__h2 {
     font-family: "roboto condensed", sans-serif;
     font-size: 40px;
     background-color: black;
     color: white;
     margin-top: 20px;
 }
-
-.datos {
+.formulario__login{
+    padding-top: 10px;
+}
+.formulario__fieldset {
     text-align: center;
     width: 600px;
     background-color: rgb(204, 200, 200);
-    margin-top: 20px;
 }
-
-.formulario fieldset legend {
-    text-align: left;
-}
-.formulario .boton {
+.formulario__botones {
     margin-top: 10px;
+    text-align: center;
+}
+.tienda {
+    font-family: "Russo One", sans-serif;
+    font-size: 50px;
 }
 .footer {
     align-content: center;
@@ -204,35 +174,45 @@ font-family: "roboto condensed", sans-serif;
     grid-template-rows: 15% 40% 15%;
     grid-template-columns: 30% 70%;
 }
-.img {
+.footer__img {
     align-self: center;
     justify-self: center;
     grid-area: img;
 }
-.lista {
+.footer__lista {
     grid-area: lista;
 }
-.nombre {
+.footer__nombre {
     align-self: start;
     justify-self: center;
     grid-area: nombre;
 }
-.footer a {
+.footer__h3 {
+    align-self: center;
+    justify-self: center;
     grid-area:h3;
+    font-family: "Russo One", sans-serif;
 color: white;
 }
-.img img {
+.footer a{
+    align-self: center;
+    justify-self: center;
+    grid-area:h3;
+    font-family: "Russo One", sans-serif;
+color: white;
+}
+.footer__img-link {
     width:80px;
 }
-.footer h5 {
+.footer__nombre-h5 {
     font-family: "roboto condensed", sans-serif;
     color: white;
 }
-.lista {
+.footer__lista {
     align-self: center;
     text-align: center;
 }
-.lista ul li{
+.footer__lista-a {
     margin-left: 110px;
     margin-right: 110px;
     display:inline;
@@ -244,90 +224,60 @@ color: white;
     font-family: "Russo One", sans-serif;
     color: white !important;
 }
-
 @media (max-width:991px){
-    .head nav {
-        display:grid;
-        width:100%;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
-    .head nav img {
-        padding-top:5px;
-    }
-    .head nav ul {
-        width: 100%;
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction:column;
-        align-content: center;
-        align-items: center;
-        padding-top: 8px;
-        
-    }
-    .head nav ul li a {
-        font-size: 15px;
-    }
-    .bienvenida {
+    .inicio {
         width:100%;
         height:600px;
     }
-    .bienvenida h1 {
+    .inicio__h1 {
         font-size:50px;
         padding-top:250px;
     }
-    .box.sticky {
+    .inicio__box {
         margin-left: 40%;
         margin-top:550px;
     }
     .titulo {
         height: 1900px;
     }
-    .titulo h1 {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 10px;
+    .titulo__h1 {
         font-size: 40px;
+        text-align: center;
     }
-    .titulo p {
-        margin-top: 20px;
-        margin-left: 40px;
-        margin-right: 40px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
+    .titulo__p {
+        margin: 20px 40px 0px 40px;
         font-size: 20px;
     }
-    div.discos {
+    .titulo__discos {
         margin: 30px 40px 20px 40px;
     }
-    .discos h2 {
+    .titulo__h2 {
         font-size: 25px;
-        margin-bottom: 10px;
     }
-    .discos table tr{
+    .tabla{
         font-size: 15px;
     }
     .multimedia {
     height: 1050px;
 }
-    .multimedia .fotos h2 {
+.multimedia__fotos{
+    text-align: center;
+}
+    .multimedia__h2 {
         font-size: 30px;
     }
-    .multimedia .videos h2 {
-        font-size: 30px;
-    }
-    .fotos img {
+    .multimedia__img {
         width: 120px;
         height: 100px;
         padding: 4px;
         margin: 10px;
     }
-    .videos {
+    .multimedia__videos {
         display:flex;
         flex-direction:column;
         align-items: center;
     }
-    .videos iframe {
+    .multimedia__link {
         margin-top:15px;
         padding:0px;
         width: 280px;
@@ -335,12 +285,22 @@ color: white;
     }
     .formulario {
         padding-top: 20px;
+        height: 550px;
+    }
+    .formulario__fieldset{
+        width: 400px;
+    }
+    .formulario__login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
     .datos {
         width: 300px;
     }
-    .footer h3 {
-        color: white;
+    .tienda {
+    font-size: 30px;
     }
     .footer {
         height: 135px;
@@ -352,34 +312,37 @@ color: white;
         grid-template-rows: 30% 70%;
         grid-template-columns: 50% 50%;  
     }
-    .img {
+    .footer__img {
         grid-area: img;
     }
-    .footer a {
-        font-size: 10px;
+    .footer__h3{
         text-align: center;
         grid-area: mapa;
     }
-    .lista {
+    .footer a {
+        text-align: center;
+        grid-area: mapa;
+    }
+    .footer__lista {
         grid-area: lista;
     }
-    .nombre {
+    .footer__nombre {
         display:none;
     }
-    .footer h3 {
+    .footer__h3 {
         width: 100%;
         margin-left: 0px;
     }
-    .footer .lista ul {
+    .footer__lista-ul {
         margin:0px;
         padding:0px;
     }
-    .footer .lista li {
+    .footer__lista-a {
         display:block;
         margin-left:0px;
         margin-right: 0px; 
     }
-    .img img {
+    .footer__img-link {
         width: 50px;
         margin-left:0px;
     } 
