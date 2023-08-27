@@ -6,41 +6,97 @@
     <title>Registro</title>
     <link rel="stylesheet" href="estilo.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 col-xs-12 p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-              <a class="navbar-brand" href="index.html"><img src="imagenes/unnamed.jpg" width="80px"/></a>
-              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-xs-12 p-0">
+          <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="imagenes/unnamed.jpg" width="80px"/></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
                   <li class="nav-item active">
-                    <a class="nav-link text-white" href="registro.html">Registro <span class="sr-only"></span></a>
+                    <a class="nav-link text-white" href="index.html">Inicio <span class="sr-only"></span></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="historia.html">Historia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="discografia.html">Discografía</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white" href="tienda.html">Tienda</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+                  <a class="nav-link text-white" href="registro.html">Registro <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="historia.html">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="discografia.html">Discografía</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="tienda.html">Tienda</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
     <main>
-<h1>Pagina en Desarrollo</h1>
+      <section class="formulario">
+        <h2 class="formulario__h2">REGISTRATE</h2>
+      <form action="texto.text" method="post" enctype="text/plain" />
+      <fieldset class="formulario__fieldset">
+      <div class="formulario__login">
+        <label class="formulario__label" for="Usuario">Usuario:</label>
+        <input class="formulario__input" type="text" id="Usuario" placeholder="Usuario" />
+        <label class="formulario__label" for="Contraseña">Contraseña:</label>
+        <input class="formulario__input" type="password" id="nombre" placeholder="Contraseña" />
+      </div>
+      </fieldset>
+      <fieldset class="formulario__fieldset">
+      <div class="formulario__item">
+      <label class="formulario__label" for="nombre">Nombre:</label>
+      <input class="formulario__input" type="text" id="nombre" placeholder="Nombre" />
+      </div>
+      <div class="formulario__item">
+      <label class="formulario__label" for="apellido">Apellido:</label>
+      <input class="formulario__input" type="text" id="apellido" placeholder="Apellido" />
+      </div>
+      <div class="formulario__item">
+      <label class="formulario__label" for="Ciudad">Ciudad:</label>
+      <input class="formulario__input" type="text" id="Ciudad" placeholder="Ciudad" />
+      </div>
+      <div class="formulario__item">
+      <label class="formulario__label" for="email">E-Mail:</label>
+      <input class="formulario__input" type="email" id="email" placeholder="E-Mail" />
+      </div>
+      </fieldset>
+      <div class="formulario__sexo">
+      <fieldset class="formulario__fieldset">
+        <label class="formulario__label" for="Sexo:">Sexo:</label>
+      <select class="formulario__select" name="tipo">
+        <option class="formulario__option" value="Masculino">Masculino</option>
+        <option class="formulario__option" value="Femenino">Femenino</option>
+        <option class="formulario__option" value="Indefinido">Indefenido</option>
+      </select>
+      </fieldset>
+      </div>
+      <div class="formulario__newsletter">
+        <fieldset class="formulario__fieldset">
+            <label class="formulario__label" for="Recibir Newlester:">Recibir Newlester</label>
+            <div class="formulario__div">Si</div>
+            <input class="formulario__input" type="radio" name="Newlester" value="Si"/>
+            <div class="formulario__div">No</div>
+            <input class="formulario__input" type="radio" name="Newlester" value="No"/>
+        </fieldset>
+      </div>
+        <div class="formulario__botones">
+        <input class="formulario__input" type="reset" value="Limpiar Formulario"/>
+        <input class="formulario__input" type="submit" value="Enviar Información"/>
+      </div>
+      </section>
     </main>
 <footer class="footer">
   <h3 class="footer__h3">Mapa del sitio</h3>
