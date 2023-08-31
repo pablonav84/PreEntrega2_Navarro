@@ -21,6 +21,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: 100%;
 }
 .discografia__titulo{
     font-family: "Russo One", sans-serif;
@@ -36,7 +37,7 @@
 }
 .content{
     display: grid;  
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 1fr 1fr 1fr;
     border:5px solid black;
     background-color: white;
 }
@@ -53,22 +54,25 @@
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    justify-content:space-between;
+    justify-content:flex-start;
+    padding-left: 250px;
     margin-top: 20px;
-    padding: 0px 200px 0px 0px; 
+}
+.content__ol{
+    padding: 0px;
 }
 .content__li a{
     font-size: 15px;
     color:black;
 }
-.contiene_todo{
+.content__botones{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
-.content__logos h2{
+.content__botones h2{
     font-family: "Russo One", sans-serif; 
 }
 .content__logos a{
@@ -126,4 +130,43 @@ color: red !important;
  .inicio__noticias:hover{
     animation-name:none;
  }
+ @media (max-width:991px){
+    .inicio__noticias{
+        position: absolute;
+        top:0;
+        width: 400px;
+        margin-top: 130px;
+    }
+    .inicio__h2{
+        font-size: 40px;
+    }
+    .inicio__h3{
+        font-size: 25px;
+    }
+    .discografia__titulo{
+        font-size: 60px;
+    }
+    .content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .discos__img{
+        width: 300px;
+        height: 300px;
+    }
+    .content__lista{
+        padding: 0px;
+        border-bottom: 2px solid;
+    }
+    .content__logos{
+        display: flex;
+        flex-direction: row;
+        padding-right: 40px;
+    }
+    .boton__pers{
+        margin:0px;
+    }
+ }
+
  

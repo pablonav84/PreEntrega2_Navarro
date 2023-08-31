@@ -376,11 +376,15 @@ color: white;
     }
     .inicio__h1 {
         font-size:50px;
-        padding-top:250px;
+        padding-top:130px;
     }
     .inicio__box {
-        margin-left: 40%;
-        margin-top:550px;
+        margin-left: 45%;
+        margin-top:600px;
+    }
+    .inicio__img{
+        width: 70px;
+        height: 70px;
     }
     .titulo {
         height: 1900px;
@@ -403,7 +407,7 @@ color: white;
         font-size: 15px;
     }
     .multimedia {
-    height: 1050px;
+    height: 100%;
 }
 .multimedia__fotos{
     text-align: center;
