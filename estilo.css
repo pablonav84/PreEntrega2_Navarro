@@ -387,7 +387,7 @@ color: white;
         height: 70px;
     }
     .titulo {
-        height: 1900px;
+        height:2500px;
     }
     .titulo__h1 {
         font-size: 40px;
@@ -411,6 +411,9 @@ color: white;
 }
 .multimedia__fotos{
     text-align: center;
+}
+.multimedia__h2{
+    font-size: 30px;
 }
 .galeria {
     padding: 10px;
@@ -454,6 +457,49 @@ color: white;
         width: 280px;
         height: 150px;
     }
+    .galeria__content{
+        height: 600px;
+    }
+    .boton-back{
+        margin-left: 10px;
+    }
+    .boton-next{
+        width: 50px;
+    }
+    .img__arte {
+        width: 293px;
+        height: 500px;
+        border: 2px solid white;
+        border-radius: 5%;
+        margin-left: 0px;
+      }
+      .img__vivo{
+        width: 293px;
+        height: 240px;
+        border: 2px solid white;
+        border-radius: 5%;
+      }
+      .img__indio{
+        width: 293px;
+        height: 240px;
+        border: 2px solid white;
+        border-radius: 5%;
+      }
+      .img__ensayos{
+        width: 293px;
+        height: 240px;
+        border: 2px solid white;
+        border-radius: 5%;
+      }
+      .img__varias{
+        width: 293px;
+        height: 240px;
+        border: 2px solid white;
+        border-radius: 5%;
+      }
+      .slider__padding{
+        padding-top: 170px;
+      }
     .formulario {
         padding-top: 20px;
         height: 550px;
