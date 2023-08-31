@@ -20,7 +20,7 @@
 }
 
 .discografia {
-  background-image: url("/imagenes/fondo_discografia.png");
+  background-image: url("../imagenes/fondo_discografia.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -188,7 +188,7 @@
     font-size: 25px;
   }
   .discografia__titulo {
-    font-size: 60px;
+    font-size: 50px;
   }
   .content {
     display: flex;
