@@ -1,3 +1,435 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fuente/Roboto_Condensed/RobotoCondensed-Light.ttf");
+}
+@font-face {
+  font-family: "russo one";
+  src: url("../fuente/Russo_One/RussoOne-Regular.ttf");
+}
+.nav-link:hover {
+  color: red !important;
+}
+
+.imagen {
+  width: 300px;
+  height: 400px;
+}
+
+.padding {
+  padding-top: 10px;
+}
+
+.inicio {
+  display: relative;
+  background-image: url("../imagenes/Sin-nombre.jpg");
+  margin-top: 10px;
+  height: 850px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.inicio__h1 {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 140px;
+  padding-top: 150px;
+}
+
+.inicio__box {
+  position: absolute;
+  top: 0px;
+  margin-left: 1600px;
+  margin-top: 700px;
+}
+
+.inicio__img {
+  border: 5px solid red;
+  border-radius: 50%;
+  width: 110px;
+  height: 105px;
+}
+
+.titulo {
+  background-image: url("../imagenes/20765.jpg");
+  height: 1050px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.titulo__h1 {
+  padding-top: 10px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  font-size: 70px;
+  font-family: "roboto condensed", sans-serif;
+}
+
+.titulo__p {
+  color: white;
+  font-size: 25px;
+  text-align: justify;
+  margin: 70px 70px;
+}
+
+.titulo__discos {
+  font-family: "roboto condensed", sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.titulo__h2 {
+  font-size: 50px;
+}
+
+.tabla {
+  font-size: 25px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.tabla__columna {
+  border: 1px solid white;
+  padding: 5px;
+}
+
+.multimedia {
+  margin-top: 10px;
+  padding: 50px;
+  background-image: url("../imagenes/audience-band-concert-crowd-wallpaper-preview.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.multimedia__h2 {
+  font-family: "roboto condensed", sans-serif;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  background-color: brown;
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+}
+
+.galeria {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 300px);
+  justify-content: center;
+  align-content: center;
+  grid-template-areas: "arte vivo indio varias" "arte ensayo ensayo varias";
+}
+
+.tile {
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.tile .back {
+  font-family: "Russo One", sans-serif;
+  font-size: 50px;
+}
+
+.tile a {
+  text-decoration: none;
+}
+
+.tile .front {
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.galeria__arte .front {
+  background-image: url(../imagenes/galeria/arte/arte2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.galeria__vivo .front {
+  background-image: url(../imagenes/galeria/vivo/vivo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.galeria__varias .front {
+  background-image: url(../imagenes/galeria/varias/foto2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.galeria__ensayo .front {
+  background-image: url(../imagenes/galeria/ensayos/ensayo4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.galeria__indio .front {
+  background-image: url(../imagenes/galeria/indio/indioenvivo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.tile .back {
+  background-color: #241561;
+  color: white;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tile:hover .front {
+  margin-top: -100%;
+}
+
+.galeria__varias:hover .front {
+  margin-top: -200%;
+}
+
+.galeria__arte:hover .front {
+  margin-top: -200%;
+}
+
+.galeria__ensayo:hover .front {
+  margin-top: -50%;
+}
+
+.galeria__arte {
+  grid-area: arte;
+}
+
+.galeria__varias {
+  grid-area: varias;
+}
+
+.galeria__ensayo {
+  grid-area: ensayo;
+}
+
+.galeria__vivo {
+  grid-area: vivo;
+}
+
+.galeria__indio {
+  grid-area: indio;
+}
+
+.galeria__content {
+  background-image: url(../imagenes/audience-band-concert-crowd-wallpaper-preview.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: 10px;
+}
+
+.boton-back {
+  margin-left: 20px;
+}
+
+.boton-next {
+  width: 100px;
+}
+
+.section__volver {
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section__img {
+  color: white;
+  width: 50px;
+  height: 50px;
+}
+
+.section__a {
+  font-family: "Russo One", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.img__arte {
+  width: 600px;
+  height: 900px;
+  border: 2px solid white;
+  border-radius: 5%;
+  margin-left: 550px;
+}
+
+.img__vivo {
+  width: 1600px;
+  height: 900px;
+  border: 2px solid white;
+  border-radius: 5%;
+}
+
+.img__indio {
+  width: 1600px;
+  height: 900px;
+  border: 2px solid white;
+  border-radius: 5%;
+}
+
+.img__ensayos {
+  width: 1600px;
+  height: 900px;
+  border: 2px solid white;
+  border-radius: 5%;
+}
+
+.img__varias {
+  width: 1600px;
+  height: 900px;
+  border: 2px solid white;
+  border-radius: 5%;
+}
+
+.multimedia__videos {
+  text-align: center;
+}
+
+.multimedia__link {
+  margin-top: 20px;
+  padding: 0px 70px 0px 70px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-image: url("../imagenes/contact.jpg");
+  background-size: cover;
+  height: 450px;
+  align-items: center;
+}
+
+.formulario__h2 {
+  font-family: "roboto condensed", sans-serif;
+  font-size: 40px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+}
+
+.formulario__login {
+  padding-top: 10px;
+}
+
+.formulario__fieldset {
+  text-align: center;
+  width: 600px;
+  background-color: rgb(204, 200, 200);
+}
+
+.formulario__botones {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tienda {
+  font-family: "Russo One", sans-serif;
+  font-size: 50px;
+}
+
+.footer {
+  align-content: center;
+  background-color: black;
+  height: 200px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-areas: "h3 h3" "img lista" "nombre lista";
+  grid-template-rows: 15% 40% 15%;
+  grid-template-columns: 30% 70%;
+}
+
+.footer__img {
+  align-self: center;
+  justify-self: center;
+  grid-area: img;
+}
+
+.footer__lista {
+  grid-area: lista;
+}
+
+.footer__nombre {
+  align-self: start;
+  justify-self: center;
+  grid-area: nombre;
+}
+
+.footer__h3 {
+  align-self: center;
+  justify-self: center;
+  grid-area: h3;
+  font-family: "Russo One", sans-serif;
+  color: white;
+}
+
+.footer a {
+  align-self: center;
+  justify-self: center;
+  grid-area: h3;
+  font-family: "Russo One", sans-serif;
+  color: white;
+}
+
+.footer__img-link {
+  width: 80px;
+}
+
+.footer__nombre-h5 {
+  font-family: "roboto condensed", sans-serif;
+  color: white;
+}
+
+.footer__lista {
+  align-self: center;
+  text-align: center;
+}
+
+.footer__lista-a {
+  margin-left: 110px;
+  margin-right: 110px;
+  display: inline;
+}
+
+.footer a {
+  align-self: center;
+  justify-self: center;
+  font-family: "Russo One", sans-serif;
+  color: white !important;
+}
+
 .inicio__noticias {
   position: absolute;
   background-color: black;
@@ -37,7 +469,7 @@
 
 .discografia__subtitulo {
   font-family: "roboto condensed", sans-serif;
-  padding: 50px 0 0 20px;
+  padding: 50px 0 10px 80px;
   color: white;
 }
 
@@ -175,6 +607,194 @@
 }
 
 @media (max-width: 991px) {
+  .inicio {
+    width: 100%;
+    height: 600px;
+  }
+  .inicio__h1 {
+    font-size: 50px;
+    padding-top: 130px;
+  }
+  .inicio__box {
+    margin-left: 45%;
+    margin-top: 600px;
+  }
+  .inicio__img {
+    width: 70px;
+    height: 70px;
+  }
+  .titulo {
+    height: 2500px;
+  }
+  .titulo__h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .titulo__p {
+    margin: 20px 40px 0px 40px;
+    font-size: 20px;
+  }
+  .titulo__discos {
+    margin: 30px 40px 20px 40px;
+  }
+  .titulo__h2 {
+    font-size: 25px;
+  }
+  .tabla {
+    font-size: 15px;
+  }
+  .multimedia {
+    height: 100%;
+  }
+  .multimedia__fotos {
+    text-align: center;
+  }
+  .multimedia__h2 {
+    font-size: 30px;
+  }
+  .galeria {
+    padding: 10px;
+    background-color: #241561;
+    display: grid;
+    grid-template-columns: repeat(2, 190px);
+    grid-template-rows: repeat(3, 200px);
+    justify-content: center;
+    align-content: stretch;
+    grid-template-areas: "arte vivo" "arte indio" "ensayo varias";
+  }
+  .tile .back {
+    font-size: 25px;
+  }
+  .galeria__arte:hover .front {
+    margin-top: -210%;
+  }
+  .galeria__vivo:hover .front {
+    margin-top: -106%;
+  }
+  .galeria__indio:hover .front {
+    margin-top: -106%;
+  }
+  .galeria__varias:hover .front {
+    margin-top: -106%;
+  }
+  .galeria__ensayo:hover .front {
+    margin-top: -110%;
+  }
+  .multimedia__videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .multimedia__link {
+    margin-top: 15px;
+    padding: 0px;
+    width: 280px;
+    height: 150px;
+  }
+  .galeria__content {
+    height: 600px;
+  }
+  .boton-back {
+    margin-left: 10px;
+  }
+  .boton-next {
+    width: 50px;
+  }
+  .img__arte {
+    width: 290px;
+    height: 500px;
+    border: 2px solid white;
+    border-radius: 5%;
+    margin-left: 0px;
+  }
+  .img__vivo {
+    width: 290px;
+    height: 240px;
+    border: 2px solid white;
+    border-radius: 5%;
+  }
+  .img__indio {
+    width: 290px;
+    height: 240px;
+    border: 2px solid white;
+    border-radius: 5%;
+  }
+  .img__ensayos {
+    width: 290px;
+    height: 240px;
+    border: 2px solid white;
+    border-radius: 5%;
+  }
+  .img__varias {
+    width: 290px;
+    height: 240px;
+    border: 2px solid white;
+    border-radius: 5%;
+  }
+  .slider__padding {
+    padding-top: 170px;
+  }
+  .formulario {
+    padding-top: 20px;
+    height: 550px;
+  }
+  .formulario__fieldset {
+    width: 400px;
+  }
+  .formulario__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .datos {
+    width: 300px;
+  }
+  .tienda {
+    font-size: 30px;
+  }
+  .footer {
+    height: 135px;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: "mapa mapa" "img lista";
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 50% 50%;
+  }
+  .footer__img {
+    grid-area: img;
+  }
+  .footer__h3 {
+    text-align: center;
+    grid-area: mapa;
+  }
+  .footer a {
+    text-align: center;
+    grid-area: mapa;
+  }
+  .footer__lista {
+    grid-area: lista;
+  }
+  .footer__nombre {
+    display: none;
+  }
+  .footer__h3 {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .footer__lista-ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  .footer__lista-a {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .footer__img-link {
+    width: 50px;
+    margin-left: 0px;
+  }
   .inicio__noticias {
     position: absolute;
     top: 0;
@@ -189,6 +809,10 @@
   }
   .discografia__titulo {
     font-size: 50px;
+  }
+  .discografia__subtitulo {
+    padding-left: 0px;
+    text-align: center;
   }
   .content {
     display: flex;
