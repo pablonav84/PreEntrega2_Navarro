@@ -569,9 +569,9 @@
   .inicio .noticias__a {
     position: absolute;
     top: 0;
-    width: 370px;
+    width: 340px;
     margin-top: 130px;
-    margin-left: 85px;
+    margin-left: -30px;
   }
   .inicio .noticias__a .noticias__h2 {
     font-size: 40px;
