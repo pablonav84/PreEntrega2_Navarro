@@ -49,6 +49,10 @@ $subtitulo: "roboto condensed", sans-serif;
 .nav-link:hover {
     color:red !important;   
 }
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 /*inicio estilo footer*/
 .footer {
     align-content: center;
@@ -555,7 +559,7 @@ $subtitulo: "roboto condensed", sans-serif;
             position: absolute;
             top:0px;
             width:340px;
-            transform: translate(160px, 350px);
+            transform: translate(35px, 350px);
         .noticias__h2{
             font-size: 40px;
         }
