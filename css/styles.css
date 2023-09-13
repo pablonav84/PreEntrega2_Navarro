@@ -51,11 +51,16 @@
     opacity: 1;
   }
 }
+.nav-item {
+  padding-right: 80px;
+}
+
 .nav-link:hover {
   color: red !important;
 }
 
-html, body {
+html,
+body {
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
@@ -138,7 +143,7 @@ html, body {
   top: 0px;
   background-color: black;
   width: 600px;
-  transform: translate(50px, 650px);
+  transform: translate(200px, 650px);
   border: 5px dashed red;
   text-decoration: none;
   animation-duration: 2s;
@@ -163,7 +168,7 @@ html, body {
 .inicio__box {
   position: absolute;
   top: 0px;
-  margin-left: 1600px;
+  margin-left: 1450px;
   margin-top: 700px;
 }
 .inicio__box .inicio__img {
@@ -340,33 +345,47 @@ html, body {
 /*inicio estilo registro*/
 .formulario {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   margin-top: 10px;
-  background-image: url("../imagenes/contact.jpg");
+  background-image: url("../imagenes/165336_1659447266_120.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 450px;
+  height: 800px;
   align-items: center;
 }
-.formulario .formulario__h2 {
+.formulario .formulario_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario .formulario_content .formulario__h2 {
   font-family: "Russo One", sans-serif;
   font-size: 40px;
-  background-color: black;
+  background-color: rgba(114, 27, 27, 0.767);
+  text-align: center;
+  width: 600px;
   color: white;
   margin-top: 20px;
 }
-.formulario .formulario__fieldset {
+.formulario .formulario_content .formulario__fieldset {
   text-align: center;
+  color: white;
+  margin: 0px 50px 0px 50px;
   width: 600px;
-  background-color: rgb(204, 200, 200);
+  background-image: radial-gradient(ellipse 300px 150px, rgb(255, 186, 58), rgba(73, 3, 3, 0.671));
 }
-.formulario .formulario__fieldset .formulario__login {
+.formulario .formulario_content .formulario__fieldset .formulario__login {
   padding-top: 10px;
 }
-.formulario .formulario__botones {
+.formulario .formulario_content .formulario__botones {
   margin-top: 10px;
   text-align: center;
+}
+.formulario .formulario_imagen-img {
+  width: 500px;
+  height: 600px;
+  margin-right: 200px;
 }
 
 /*fin estilo registro*/
@@ -534,6 +553,10 @@ html, body {
 
 /*fin estilo galeria de fotos*/
 @media (max-width: 991px) {
+  /*inicio estilo navbar media queries*/
+  #burguer {
+    justify-content: space-around;
+  }
   /*inicio estilo footer media queries*/
   .footer {
     height: 135px;
@@ -679,7 +702,10 @@ html, body {
   /*inicio estilo registro media queries*/
   .formulario {
     padding-top: 20px;
-    height: 550px;
+    height: 800px;
+  }
+  .formulario .formulario_imagen {
+    display: none;
   }
   .formulario .formulario__fieldset {
     width: 400px;
