@@ -79,6 +79,14 @@ body {
   max-width: 100% !important;
   overflow-x: hidden !important;
 }
+/*estilo pagina error 404*/
+.error {
+  @include background;
+  text-align: center;
+  .error-img {
+    height: 740px;
+  }
+}
 /*inicio estilo footer*/
 .footer {
   align-content: center;
@@ -544,9 +552,22 @@ body {
   }
 }
 /*fin estilo galeria de fotos*/
+
+/*-----------media queries-----------*/
 @media (max-width: 991px) {
+  /*estilo pagina error 404 media queries*/
+  .error {
+    height: 670px;
+    .error-img {
+      overflow-x: hidden;
+      transform: translate(-215px, 120px);
+      position: relative;
+      width: 850px;
+      height: 450px;
+    }
+  }
   /*inicio estilo navbar media queries*/
-  #burguer{
+  #burguer {
     justify-content: space-around;
   }
   /*inicio estilo footer media queries*/
@@ -702,8 +723,8 @@ body {
   .formulario {
     padding-top: 20px;
     height: 800px;
-    .formulario_imagen{
-      display:none;
+    .formulario_imagen {
+      display: none;
     }
     .formulario__fieldset {
       width: 400px;

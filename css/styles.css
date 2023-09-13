@@ -65,6 +65,17 @@ body {
   overflow-x: hidden !important;
 }
 
+/*estilo pagina error 404*/
+.error {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+.error .error-img {
+  height: 740px;
+}
+
 /*inicio estilo footer*/
 .footer {
   align-content: center;
@@ -552,7 +563,19 @@ body {
 }
 
 /*fin estilo galeria de fotos*/
+/*-----------media queries-----------*/
 @media (max-width: 991px) {
+  /*estilo pagina error 404 media queries*/
+  .error {
+    height: 670px;
+  }
+  .error .error-img {
+    overflow-x: hidden;
+    transform: translate(-215px, 120px);
+    position: relative;
+    width: 850px;
+    height: 450px;
+  }
   /*inicio estilo navbar media queries*/
   #burguer {
     justify-content: space-around;
